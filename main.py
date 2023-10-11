@@ -163,9 +163,6 @@ def AStarAlgorithm(startingNode, goalNode, neighboringGraph):
 
         openSet.remove(n)
         closedSet.append(n)
-        '''plt.pause(0.001)
-        plt.plot(n[0], [rrt.nearestNode.locationY, new[1]], 'go', linestyle="--",
-                 markersize=1, linewidth=0.4)'''
 
     print('>>>>Path does not exist!<<<<\n')
     return None
@@ -179,7 +176,6 @@ def getSortedGoalNodes(absoluteStartingNode, goalNodes, neighboringGraph, closed
         sortedGoalNodes = []
         for node in goalNodesHolder:
             AstarOutput = AStarAlgorithm(startingNodeHolder, node, neighboringGraph)
-            #costToAbsoluteStartingNode = AStarAlgorithm(node, absoluteStartingNode, neighboringGraph)
             sortedGoalNodes.append([node, AstarOutput[1]])
         sortedGoalNodes = sorted(sortedGoalNodes, key=lambda x: x[1])
 
@@ -392,16 +388,6 @@ constantSpeed = 0.8 #m/s
 constantSpeed /=scale #pixel/s
 
 
-'''
-fig, ax = plt.subplots()
-plt.title("Select A Starting Node")
-ax.imshow(image)
-points = []
-first_point = None
-cid = fig.canvas.mpl_connect('button_press_event', onclick)
-fig.canvas.mpl_connect('key_press_event', clear_points)
-plt.show()
-'''
 print("Given Scale: ", scale, " m/pixel\n",  "Given Spacing in Meters: ", scaleToMeters(scale, spacing), " m.\n",\
     "Given Spacing in Pixels: ", spacing, " pixels.\n", \
       "Given Robot Speed: ", scaleToMeters(scale, constantSpeed), "m/s = ", constantSpeed, "pixel/s.\n")
@@ -419,7 +405,6 @@ print("Time to Filter Equally-Spaced Nodes: ", nodesFilteringTime, " s\n")
 
 # initializing a list containing the coordinates of user-defined fixed locations in the map
 userDefinedNodes = [(2640, 1120), (300, 300), (5266, 1255), (4314, 154), (646, 3678), (2100, 2325), (2710, 106), (1266, 164), (5000, 3660), (3222, 1775), (2475, 3277), (988, 1972), (2645, 2365), (2972, 2383), (2279, 2383), (4000, 2376), (50, 2426), (4313, 2419), (1040, 2680) , (0, 440), (5240, 640), (920, 2400), (2960, 3640), (2320, 3600), (2200, 3160), (360, 3520), (3560, 2160), (560, 0), (2560, 3000), (5080, 120), (1120, 160), (1600, 1160), (3240, 360), (480, 1640), (4800, 3400), (600, 1960), (320, 3480), (880, 760), (2400, 1080), (4120, 1640), (4200, 1400), (2160, 1000), (800, 280), (4400, 600), (160, 1840), (5280, 1880), (4320, 1400), (1840, 520), (2600, 2920), (1880, 3080), (0, 2120), (800, 3040), (1600, 3680), (3880, 1200), (4560, 120), (760, 3560), (5280, 3080), (3560, 560), (2720, 920), (1240, 840), (1880, 2040), (4040, 880), (400, 1360), (2120, 2080), (4400, 3720), (3160, 3760), (3680, 1320), (960, 2440), (4880, 920), (2400, 800), (0, 3360), (2520, 2560), (1160, 1680), (4400, 440), (1800, 360), (3240, 2160), (440, 3640), (5040, 2840), (1560, 3720), (2560, 960), (3160, 2400), (3760, 2160), (3400, 0), (3280, 400), (5120, 680), (3640, 3720), (1680, 1160), (1240, 0), (3280, 640), (520, 1840), (4880, 880), (3400, 40), (1520, 3440), (1120, 920), (2680, 3600), (2280, 3400), (40, 3360), (2880, 680), (5320, 1240), (2520, 960), (3200, 2520), (720, 720), (640, 1160), (4440, 1200), (4960, 0), (3480, 3640), (40, 1400), (1040, 3160), (2520, 3360), (1520, 3280), (2400, 1120), (5200, 1640), (5360, 1640), (5360, 3040), (360, 2880), (560, 2160), (4400, 320), (1080, 520), (2000, 2360)]
-#userDefinedNodes = points
 print("User-Defined Nodes' coordinates: ", userDefinedNodes, "\n")
 
 coordinates = filteredPoints + userDefinedNodes
@@ -433,8 +418,6 @@ ax.imshow(image)
 plt.title("Path Nodes Generation")
 ax.scatter(xPoints, yPoints, s=0.5, c="r", label = "Equally-Spaced Nodes")
 ax.scatter(fixedXPoints, fixedYPoints, s=1.5, c="b", label = "User-Defined Nodes")
-#ax.legend(loc='lower left')
-#plt.xlim(-100, 5500)
 plt.tight_layout()
 plt.show()
 
@@ -447,12 +430,6 @@ neighbouringGraphGenerationTime = endTime-startTime
 print("Time to Generate Neighbouring Graph: ", neighbouringGraphGenerationTime, " s\n")
 #this code transforms our dictionary from a dictionary inside a dictionary format to a list inside a dictionary format
 neighboringGraph = modifiedGraph
-
-
-'''#PyPlot defined nodes
-startingNode = points[0] # assigning the absolute starting node
-goalNodes = points[1:]'''
-
 
 #10User-DefinedGoalNodes_IsolatedStartingNode
 startingNode = (300, 300) # assigning the absolute starting node
@@ -491,9 +468,7 @@ ax.imshow(image)
 ax.scatter(xGoals, yGoals, s= 30, c = 'g', label = 'Goal Nodes')
 ax.scatter(startingNode[0], startingNode[1], s = 40, c = 'm', label = 'Starting Node')
 plt.title("Starting & Goal Nodes")
-#plt.xlim(-100, 5500)
 plt.tight_layout()
-#ax.legend(loc='best')
 plt.show()
 
 
@@ -509,7 +484,7 @@ print("Time to Order Goal Nodes: ", goalNodesSortingTime, " s\n")
 startTime = time.time()
 totalPathGeneration = generateTotalPath(startingNode, orderedGoalNodes, neighboringGraph)
 finalTotalPath = totalPathGeneration[0]
-#finalTotalPath = getFarOfObstacles(coordinates, finalTotalPath, spacing)
+#finalTotalPath = getFarOfObstacles(coordinates, finalTotalPath, spacing) #optionally used
 endTime = time.time()
 totalPathGenerationTime = endTime-startTime
 print("Time to Generate Total Path: ", totalPathGenerationTime, " s\n")
@@ -520,26 +495,14 @@ ax.plot(x, y, c='gold', label="Generated Paths")
 ax.scatter(x, y, s=3, c="r", label = 'Path Nodes')
 ax.scatter(xGoals, yGoals, s= 30, c = 'g', label = 'Goal Nodes')
 ax.scatter(startingNode[0], startingNode[1], s = 40, c = 'm', label = 'Starting Node')
-'''circle = plt.Circle((x[0], y[0]), radius=40, color='b', label = 'The Robot')
-ax.add_artist(circle)
-
-def animate(i):
-    circle.center = (x[i], y[i])
-    return circle,
-
-ani = animation.FuncAnimation(fig, animate, frames=len(x), interval=60)
-ani.save("animation.gif", writer='pillow')'''
 plt.title("Overall Path")
-#plt.xlim(-100, 5500)
 plt.tight_layout()
-#ax.legend(loc='best')
 plt.show()
 
 totalCost = totalPathGeneration[1]
 time = math.ceil(totalCost/constantSpeed)
 print(f"Needed Time to Complete The Path: {time} s\n")
 t = np.linspace(0, time, len(finalTotalPath))
-#print(t, "\n")
 path = np.array(finalTotalPath)
 x = path[:, 0]
 y = path[:, 1]
@@ -558,7 +521,6 @@ ax.scatter(x, y, s=5, c="r", label = 'Path Nodes')
 ax.scatter(xGoals, yGoals, s= 15, c = 'g', label = 'Goal Nodes')
 ax.scatter(startingNode[0], startingNode[1], s = 20, c = 'm', label = 'Starting Node')
 plt.title("Path Smoothing and Interpolation Using Cubic Splines")
-#plt.xlim(-100, 5500)
 plt.tight_layout()
 plt.show()
 cubicSplinesPathNodes = []
