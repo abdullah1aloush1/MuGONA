@@ -53,10 +53,17 @@ __Initial Assignments:__
 
 
 - 1- Open file main.py and go to the MAIN section.
-- 2- Insert the name of your own PROCESSED map with its corresponding extension (preferably .png) in the variable 'imageDirectory'.
+- 2- Insert the name of your own PROCESSED map with its corresponding extension (preferably .png) in the corresponding Variable:
+
+        imageDirectory = 'map.png'
+
 - 2.1- If your own map file is not located in the same folder of main.py, write its directory before the name of the map.
 - 2.2- If you do not have a map, use the already provided map file (map.png).
-- 3- Assign the desired spacing value in terms of pixels to the variable 'spacing'.
+- 3- Assign the desired spacing value in terms of pixels to the corresponding Variable:
+
+        spacing =40 #pixels
+
+- 
 - 4- Assign the desired scale value in terms of meters/pixels to the variable 'scale'.
 - 5- Assign the average constant speed of the robot in terms of meters/pixels to the variable 'constantSpeed'.
 - 6- Assign the coordinates of the nodes that will be worked on during the execution of MuGONA to the variable 'userDefinedNodes' as a list of tuples, each tuple includes the x and y coordinates of one of the user-defined nodes.
