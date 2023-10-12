@@ -35,6 +35,13 @@ User Guide:
 
 ## Getting Started
 
+__Installation Instructions for MuGONA__
+MuGONA can be set up and used in your own projects with the following steps:
+
+__Prerequisites:__
+
+    Python 3.x
+    
 Initial Assignments:
 
 
