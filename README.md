@@ -1,9 +1,10 @@
-![fig2](https://github.com/abdullah1aloush1/MuGONA/assets/120781937/6f05c992-3ed2-4218-ab4a-2645c52c19b2)![fig2](https://github.com/abdullah1aloush1/MuGONA/assets/120781937/3c7cb441-106e-4885-a948-30de6d5f36ab)# Multiple-Goals-Ordering-Navigation-Algorithm
-Multiple-Goals-Ordering-Navigation-Algorithm
+![fig2](https://github.com/abdullah1aloush1/MuGONA/assets/120781937/6f05c992-3ed2-4218-ab4a-2645c52c19b2)![fig2](https://github.com/abdullah1aloush1/MuGONA/assets/120781937/3c7cb441-106e-4885-a948-30de6d5f36ab)
+# Multiple-Goals-Ordering-Navigation-Algorithm
+# MuGONA
 
 
 
-Definition:
+## Definition:
 
 
 
