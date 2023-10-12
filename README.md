@@ -53,7 +53,7 @@ Initial Assignments:
 
 - 1- Open file main.py and go to the MAIN section.
 - 2- Insert the name of your own PROCESSED map with its corresponding extension (preferably .png) in the variable 'imageDirectory'.
-2.1- If your own map file is not located in the same folder of main.py, write its directory before the name of the map.
+-- 2.1- If your own map file is not located in the same folder of main.py, write its directory before the name of the map.
 2.2- If you do not have a map, use the already provided map file (map.png).
 - 3- Assign the desired spacing value in terms of pixels to the variable 'spacing'.
 - 4- Assign the desired scale value in terms of meters/pixels to the variable 'scale'.
