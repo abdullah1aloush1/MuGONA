@@ -32,6 +32,7 @@ Lastly, the algorithm applies a path-smoothing technique that ensures the obtain
 
 User Guide:
 
+## Getting Started
 
 Initial Assignments:
 
