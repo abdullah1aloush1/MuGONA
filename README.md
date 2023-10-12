@@ -13,7 +13,7 @@ The algorithm works on finding a near-optimal visiting configuration (order) to 
 The algorithm proceeds to process the generated overall path and smooth it using Cubic-splines to be more appropriate for real-life robot navigation.
 The algorithm finally outputs a list of the coordinates of the smoothed (or original) overall path and plots it as a figure.
 
-![My Image](https://drive.google.com/file/d/10lR0Ci-Z8RnxjidCcc8Qp9lA7WpKv717/view?usp=drive_link)
+![MuGONA's Modules](https://drive.google.com/file/d/10lR0Ci-Z8RnxjidCcc8Qp9lA7WpKv717/view?usp=drive_link)
 
 Work Flow:
 
@@ -27,7 +27,7 @@ Thirdly, the algorithm uses the modified ordering algorithm that can determine a
 
 Lastly, the algorithm applies a path-smoothing technique that ensures the obtained near-optimal path is feasible for robot steering systems. We also generated the total trajectory with respect to the average speed of the robot, providing a complete and efficient solution to the path-planning problem.
 
-![My Image](https://drive.google.com/file/d/13yYrlKrWToLqsjOX6rPe78qtyaTj3gde/view?usp=sharing)
+![MuGONA's Ordering Algorithms](https://drive.google.com/file/d/13yYrlKrWToLqsjOX6rPe78qtyaTj3gde/view?usp=sharing)
 
 
 User Guide:
