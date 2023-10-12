@@ -2,18 +2,20 @@
 The repository for [Improving efficiency and cost of ordering algorithms in pathfinding using shell layers](https://www.sciencedirect.com/science/article/abs/pii/S0957417423024508). A scientific journal paper accepted at Expert Systems with Applications in the fields of Robotic Navigation and Artificial Intelligence. 
 
 
-## Definition:
+## MuGONA's Description:
 
 
+MuGONA is a set of many algorithms integrated together. This integration takes a top-view 2D image map file of an autonomous mobile robot's workspace as input. The input map should contain only black and white coloured areas where white coloured areas represent navigatable passages for the robot while black areas represent blocked passages that the robot can not navigate through.
 
 
-MuGONA is a combined algorithm that takes a top-view 2D image map file of the workspace as input. The map should contain only black and white coloured areas where white coloured areas represent navigatable passages for the robot while black areas represent blocked passages that the robot can not navigate through.
-The algorithm works on finding a near-optimal visiting configuration (order) to visit the provided goal nodes. Then, it connects the ordered goal nodes by navigatable path sections providing sampled path coordinates along the whole path.
+MuGONA works mainly on finding a near-optimal visiting configuration (order) to visit the provided goal nodes. Then, it connects the ordered goal nodes by navigatable path sections providing sampled path coordinates along the whole path.
+
+
 The algorithm proceeds to process the generated overall path and smooth it using Cubic-splines to be more appropriate for real-life robot navigation.
+
+
 The algorithm finally outputs a list of the coordinates of the smoothed (or original) overall path and plots it as a figure.
 
-
-![MuGONA's Modules](https://drive.google.com/file/d/10lR0Ci-Z8RnxjidCcc8Qp9lA7WpKv717/view?usp=drive_link)
 
 
 __Work Flow:__
@@ -21,15 +23,19 @@ __Work Flow:__
 
 - Firstly, the algorithm generates equally-spaced path nodes exploiting a 2D map, which are traversable and avoid obstacles. This method allows for the efficient exploration of the entire map while ensuring that the motion of the robot remains smooth and continuous.
 
+
 - Secondly, The algorithm constructs a well-structured neighboring graph that defines the relationships between the generated nodes themselves and the user-defined nodes. This approach improves the performance of the A* search algorithm and reduces the computational complexity of the path-planning problem.
+
 
 - Thirdly, the algorithm uses the modified ordering algorithm that can determine a near-optimal visiting order for a starting node and a group of goal nodes. This algorithm is based on the A* search algorithm and Euclidean distance and efficiently determines the best visiting order while avoiding obstacles.
 
+
 - Lastly, the algorithm applies a path-smoothing technique that ensures the obtained near-optimal path is feasible for robot steering systems. We also generated the total trajectory with respect to the average speed of the robot, providing a complete and efficient solution to the path-planning problem.
 
+![MuGONA's Modules](https://drive.google.com/file/d/10lR0Ci-Z8RnxjidCcc8Qp9lA7WpKv717/view?usp=drive_link)
+
+
 ![MuGONA's Ordering Algorithms](https://drive.google.com/file/d/13yYrlKrWToLqsjOX6rPe78qtyaTj3gde/view?usp=sharing)
-
-
 User Guide:
 
 ## Getting Started
