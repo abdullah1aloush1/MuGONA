@@ -1,7 +1,5 @@
-![fig2](https://github.com/abdullah1aloush1/MuGONA/assets/120781937/6f05c992-3ed2-4218-ab4a-2645c52c19b2)![fig2](https://github.com/abdullah1aloush1/MuGONA/assets/120781937/3c7cb441-106e-4885-a948-30de6d5f36ab)
 # Multiple-Goals-Ordering-Navigation-Algorithm
-# MuGONA
-
+The repository for [Improving efficiency and cost of ordering algorithms in pathfinding using shell layers](https://www.sciencedirect.com/science/article/abs/pii/S0957417423024508). A scientific journal paper accepted at Expert Systems with Applications in the fields of Robotic Navigation and Artificial Intelligence. 
 
 
 ## Definition:
