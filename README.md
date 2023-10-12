@@ -1,4 +1,4 @@
-# Multiple-Goals-Ordering-Navigation-Algorithm
+![fig2](https://github.com/abdullah1aloush1/MuGONA/assets/120781937/6f05c992-3ed2-4218-ab4a-2645c52c19b2)![fig2](https://github.com/abdullah1aloush1/MuGONA/assets/120781937/3c7cb441-106e-4885-a948-30de6d5f36ab)# Multiple-Goals-Ordering-Navigation-Algorithm
 Multiple-Goals-Ordering-Navigation-Algorithm
 
 
@@ -13,7 +13,7 @@ The algorithm works on finding a near-optimal visiting configuration (order) to 
 The algorithm proceeds to process the generated overall path and smooth it using Cubic-splines to be more appropriate for real-life robot navigation.
 The algorithm finally outputs a list of the coordinates of the smoothed (or original) overall path and plots it as a figure.
 
-
+![My Image]([https://example.com/path/to/your/image.png](https://drive.google.com/file/d/10lR0Ci-Z8RnxjidCcc8Qp9lA7WpKv717/view?usp=drive_link))
 
 Work Flow:
 
