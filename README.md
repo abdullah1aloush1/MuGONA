@@ -47,7 +47,8 @@ __Prerequisites:__
 
     Python 3.x
     
-Initial Assignments:
+    
+__Initial Assignments:__
 
 
 
@@ -64,7 +65,7 @@ Initial Assignments:
 - 8- Assign the coordinates of the goal nodes as a list of tuples to the variable 'goalNodes'. The goal nodes should be either present in the generated equally-spaced nodes or stored in the variable 'userDefinedNodes'.
 
 
-Running MuGONA:
+__Running MuGONA:__
 
 
 
