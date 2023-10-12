@@ -14,19 +14,20 @@ The algorithm works on finding a near-optimal visiting configuration (order) to 
 The algorithm proceeds to process the generated overall path and smooth it using Cubic-splines to be more appropriate for real-life robot navigation.
 The algorithm finally outputs a list of the coordinates of the smoothed (or original) overall path and plots it as a figure.
 
+
 ![MuGONA's Modules](https://drive.google.com/file/d/10lR0Ci-Z8RnxjidCcc8Qp9lA7WpKv717/view?usp=drive_link)
 
-Work Flow:
+
+__Work Flow:__
 
 
+- Firstly, the algorithm generates equally-spaced path nodes exploiting a 2D map, which are traversable and avoid obstacles. This method allows for the efficient exploration of the entire map while ensuring that the motion of the robot remains smooth and continuous.
 
-Firstly, the algorithm generates equally-spaced path nodes exploiting a 2D map, which are traversable and avoid obstacles. This method allows for the efficient exploration of the entire map while ensuring that the motion of the robot remains smooth and continuous.
+- Secondly, The algorithm constructs a well-structured neighboring graph that defines the relationships between the generated nodes themselves and the user-defined nodes. This approach improves the performance of the A* search algorithm and reduces the computational complexity of the path-planning problem.
 
-Secondly, The algorithm constructs a well-structured neighboring graph that defines the relationships between the generated nodes themselves and the user-defined nodes. This approach improves the performance of the A* search algorithm and reduces the computational complexity of the path-planning problem.
+- Thirdly, the algorithm uses the modified ordering algorithm that can determine a near-optimal visiting order for a starting node and a group of goal nodes. This algorithm is based on the A* search algorithm and Euclidean distance and efficiently determines the best visiting order while avoiding obstacles.
 
-Thirdly, the algorithm uses the modified ordering algorithm that can determine a near-optimal visiting order for a starting node and a group of goal nodes. This algorithm is based on the A* search algorithm and Euclidean distance and efficiently determines the best visiting order while avoiding obstacles.
-
-Lastly, the algorithm applies a path-smoothing technique that ensures the obtained near-optimal path is feasible for robot steering systems. We also generated the total trajectory with respect to the average speed of the robot, providing a complete and efficient solution to the path-planning problem.
+- Lastly, the algorithm applies a path-smoothing technique that ensures the obtained near-optimal path is feasible for robot steering systems. We also generated the total trajectory with respect to the average speed of the robot, providing a complete and efficient solution to the path-planning problem.
 
 ![MuGONA's Ordering Algorithms](https://drive.google.com/file/d/13yYrlKrWToLqsjOX6rPe78qtyaTj3gde/view?usp=sharing)
 
