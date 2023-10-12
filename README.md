@@ -36,7 +36,7 @@ __Work Flow:__
 
 
 ![MuGONA's Ordering Algorithms](https://drive.google.com/file/d/13yYrlKrWToLqsjOX6rPe78qtyaTj3gde/view?usp=sharing)
-User Guide:
+
 
 ## Getting Started
 
@@ -51,17 +51,17 @@ Initial Assignments:
 
 
 
-1- Open file main.py and go to the MAIN section.
-2- Insert the name of your own PROCESSED map with its corresponding extension (preferably .png) in the variable 'imageDirectory'.
+- 1- Open file main.py and go to the MAIN section.
+- 2- Insert the name of your own PROCESSED map with its corresponding extension (preferably .png) in the variable 'imageDirectory'.
 2.1- If your own map file is not located in the same folder of main.py, write its directory before the name of the map.
 2.2- If you do not have a map, use the already provided map file (map.png).
-3- Assign the desired spacing value in terms of pixels to the variable 'spacing'.
-4- Assign the desired scale value in terms of meters/pixels to the variable 'scale'.
-5- Assign the average constant speed of the robot in terms of meters/pixels to the variable 'constantSpeed'.
-6- Assign the coordinates of the nodes that will be worked on during the execution of MuGONA to the variable 'userDefinedNodes' as a list of tuples, each tuple includes the x and y coordinates of one of the user-defined nodes.
+- 3- Assign the desired spacing value in terms of pixels to the variable 'spacing'.
+- 4- Assign the desired scale value in terms of meters/pixels to the variable 'scale'.
+- 5- Assign the average constant speed of the robot in terms of meters/pixels to the variable 'constantSpeed'.
+- 6- Assign the coordinates of the nodes that will be worked on during the execution of MuGONA to the variable 'userDefinedNodes' as a list of tuples, each tuple includes the x and y coordinates of one of the user-defined nodes.
 6.1- if the scale is 1 meters/pixel, then you can insert the coordinates in terms of meters. However, if the scale is not 1 meters/pixel you should calculate the corresponding pixel coordinates of your nodes.
-7- Assign the starting node coordinates to the variable 'startingNode'. The starting node should be either present in the generated equally-spaced nodes or stored in the variable 'userDefinedNodes'.
-8- Assign the coordinates of the goal nodes as a list of tuples to the variable 'goalNodes'. The goal nodes should be either present in the generated equally-spaced nodes or stored in the variable 'userDefinedNodes'.
+- 7- Assign the starting node coordinates to the variable 'startingNode'. The starting node should be either present in the generated equally-spaced nodes or stored in the variable 'userDefinedNodes'.
+- 8- Assign the coordinates of the goal nodes as a list of tuples to the variable 'goalNodes'. The goal nodes should be either present in the generated equally-spaced nodes or stored in the variable 'userDefinedNodes'.
 
 
 Running MuGONA:
