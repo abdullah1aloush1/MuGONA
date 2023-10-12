@@ -27,7 +27,7 @@ Thirdly, the algorithm uses the modified ordering algorithm that can determine a
 
 Lastly, the algorithm applies a path-smoothing technique that ensures the obtained near-optimal path is feasible for robot steering systems. We also generated the total trajectory with respect to the average speed of the robot, providing a complete and efficient solution to the path-planning problem.
 
-
+![My Image](https://drive.google.com/file/d/13yYrlKrWToLqsjOX6rPe78qtyaTj3gde/view?usp=sharing)
 
 
 User Guide:
