@@ -91,6 +91,9 @@ __Running MuGONA:__
 
 - 0- After assigning and checking for the necessary preliminaries, RUN the code.
 - 1- At first, MuGONA will generate equally-spaced nodes with respect to the specified spacing and then will show the generated equally-spaced nodes and the user-defined nodes on the map plot.
+
+![First Plot](https://drive.google.com/file/d/1mQSbQ82_I8FLk-sYD6Yn2jK49_OjUSdA/view?usp=sharing)
+
 - 2- Secondly, MuGONA will show the selected starting node and the selected goal nodes on the map plot.
 - 3- Thirdly, MuGONA will start ordering the goal nodes seeking the near-optimal visiting configuration. The code may run for a certain period of time until all of the nodes are ordered.
 - 4- Fourthly, MuGONA will generate the overall path connecting the ordered goal nodes and show it on the map plot.
