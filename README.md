@@ -36,8 +36,10 @@ __Work Flow:__
 ![MuGONA's Modules](https://github.com/abdullah1aloush1/MuGONA/blob/main/MuGONA's%20Modules.png)
 
 
+![MuGONA's Ordering Algorithms](https://github.com/abdullah1aloush1/MuGONA/blob/main/MuGONA's%20Ordering%20Algorithm.png)
 
-![MuGONA's Ordering Algorithms](https://github.com/abdullah1aloush1/MuGONA/blob/main/GeneratedOverallPathFarOfObstacles.png)
+
+![Generating A Path For 100 Goal Nodes](https://github.com/abdullah1aloush1/MuGONA/blob/main/Generated%20Overall%20Path%20with%20100%20Goal%20Nodes.png)
 
 
 ## Getting Started
@@ -94,11 +96,20 @@ __Running MuGONA:__
 - 0- After assigning and checking for the necessary preliminaries, RUN the code.
 - 1- At first, MuGONA will generate equally-spaced nodes with respect to the specified spacing and then will show the generated equally-spaced nodes and the user-defined nodes on the map plot.
 
-![First Plot](https://drive.google.com/file/d/1mQSbQ82_I8FLk-sYD6Yn2jK49_OjUSdA/view?usp=sharing)
+![Generated Equally-Spaced Nodes and User-Defined Nodes](https://drive.google.com/file/d/1mQSbQ82_I8FLk-sYD6Yn2jK49_OjUSdA/view?usp=sharing)
 
 - 2- Secondly, MuGONA will show the selected starting node and the selected goal nodes on the map plot.
-- 3- Thirdly, MuGONA will start ordering the goal nodes seeking the near-optimal visiting configuration. The code may run for a certain period of time until all of the nodes are ordered.
+
+![Starting and Goal Nodes](https://github.com/abdullah1aloush1/MuGONA/blob/main/Starting%20and%20Goal%20Nodes.png)
+
+- 3- Thirdly, MuGONA will start ordering the goal nodes seeking the near-optimal visiting configuration. The code may run for a certain period of time, depending on the given parameters and the number of goal nodes, until all of the nodes are ordered.
 - 4- Fourthly, MuGONA will generate the overall path connecting the ordered goal nodes and show it on the map plot.
+
+![Generated Overall Path](https://github.com/abdullah1aloush1/MuGONA/blob/main/Generated%20Overall%20Path.png)
+
 - 5- Fifthly, MuGONA will smooth the path using cubic splines and show the smoothed path on the map plot.
+
+![Smoothed Path](https://github.com/abdullah1aloush1/MuGONA/blob/main/Smoothed%20Path.png)
+
 - 6- In order for MuGONA to proceed, each plot should be closed after it's inspected.
 - 7- The recorded data and workflow information (including the coordinates of the generated overall path) are always printed in the terminal.
