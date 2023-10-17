@@ -1,5 +1,5 @@
-# Multiple-Goals-Ordering-Navigation-Algorithm
-The repository for [Improving efficiency and cost of ordering algorithms in pathfinding using shell layers](https://www.sciencedirect.com/science/article/abs/pii/S0957417423024508). A scientific journal paper accepted at Expert Systems with Applications in the fields of Robotic Navigation and Artificial Intelligence. 
+# Multiple-Goals-Ordering-Navigation-Algorithm (MuGONA)
+The repository for [Improving efficiency and cost of ordering algorithms in pathfinding using shell layers](https://www.sciencedirect.com/science/article/abs/pii/S0957417423024508). A scientific journal paper published at Expert Systems with Applications in the fields of Robotic Navigation and Artificial Intelligence. 
 
 
 ## MuGONA's Description:
@@ -113,3 +113,18 @@ __Running MuGONA:__
 
 - 6- In order for MuGONA to proceed, each plot should be closed after it's inspected.
 - 7- The recorded data and workflow information (including the coordinates of the generated overall path) are always printed in the terminal.
+
+
+If you find this code or paper useful, please cite as:
+
+    @article{ALLUS2023121948,
+    title = {Improving efficiency and cost of ordering algorithms in pathfinding using shell layers},
+    journal = {Expert Systems with Applications},
+    pages = {121948},
+    year = {2023},
+    issn = {0957-4174},
+    doi = {https://doi.org/10.1016/j.eswa.2023.121948},
+    url = {https://www.sciencedirect.com/science/article/pii/S0957417423024508},
+    author = {Abdullah Allus and Abdul Moati Diab and Ertugrul Bayraktar},
+    keywords = {Pathfinding, Ordering algorithms, Computational efficiency, Distance cost, Shell layers}
+    }
