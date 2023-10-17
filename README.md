@@ -33,13 +33,13 @@ __Work Flow:__
 - Lastly, the algorithm applies a path-smoothing technique that ensures the obtained near-optimal path is feasible for robot steering systems. We also generated the total trajectory with respect to the average speed of the robot, providing a complete and efficient solution to the path-planning problem.
 
 
-![MuGONA's Modules](https://github.com/abdullah1aloush1/MuGONA/blob/main/MuGONA's%20Modules.png)
+![MuGONA's Modules](https://github.com/abdullah1aloush1/MuGONA/blob/main/MuGONA's%20Modules.png width="200" height="200")
 
 
-![MuGONA's Ordering Algorithms](https://github.com/abdullah1aloush1/MuGONA/blob/main/MuGONA's%20Ordering%20Algorithm.png)
+![MuGONA's Ordering Algorithms](https://github.com/abdullah1aloush1/MuGONA/blob/main/MuGONA's%20Ordering%20Algorithm.png width="200" height="200")
 
 
-![Generating A Path For 100 Goal Nodes](https://github.com/abdullah1aloush1/MuGONA/blob/main/Generated%20Overall%20Path%20with%20100%20Goal%20Nodes.png)
+![Generating A Path For 100 Goal Nodes](https://github.com/abdullah1aloush1/MuGONA/blob/main/Generated%20Overall%20Path%20with%20100%20Goal%20Nodes.png width="200" height="200")
 
 
 ## Getting Started
