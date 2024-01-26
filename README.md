@@ -1,6 +1,10 @@
 # Multiple-Goals-Ordering-Navigation-Algorithm (MuGONA)
 The repository for [Improving efficiency and cost of ordering algorithms in pathfinding using shell layers](https://www.sciencedirect.com/science/article/abs/pii/S0957417423024508). A scientific journal paper published at Expert Systems with Applications in the fields of Robotic Navigation and Artificial Intelligence. 
 
+Explanatory Youtube Playlist
+
+https://www.youtube.com/playlist?list=PLwX7DWU7qhob7qSITwEJWxJIznjLwxgRz
+
 
 ## MuGONA's Description:
 
